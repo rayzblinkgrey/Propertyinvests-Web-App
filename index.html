@@ -1,0 +1,1569 @@
+<!DOCTYPE html> 
+<html xmlns:ice="http://ns.adobe.com/incontextediting">
+<head>
+<meta charset="utf-8">
+<title>Propertyinvests Web App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/style1.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="custom.css">
+<style type="text/css">
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+body,td,th {
+	color: #FFF;
+	text-shadow: none;
+	alignment-adjust: middle;
+}
+body {
+	line-height: none;
+	width: auto;
+	height: auto;
+	color: #000;
+	text-shadow: 1px 1px 1px #FFF;
+}
+</style>
+<link href="css/lightbox.css" rel="stylesheet" type="text/css">
+<link href="css/sample_lightbox_layout.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="includes/ice/ice.js" type="text/javascript"></script>
+<script src="scripts/jquery.js" type="text/javascript"></script>
+<script src="scripts/lightbox.js" type="text/javascript"></script>
+<style type="text/css">
+/* BeginOAWidget_Instance_2127022: #gallery */
+
+		.lbGallery {
+	/*gallery container settings*/
+	background-color: #ffcc00;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	width: auto;
+	height: auto;
+	text-align: left;
+		}
+		.lbGallery ul { list-style: none; margin:0;padding:0; }
+		.lbGallery ul li { display: inline;margin:0;padding:0; }
+		.lbGallery ul li a{text-decoration:none;}
+			
+		.lbGallery ul li a img {
+			/*border color, width and margin for the images*/
+			border-color: #ffffff;
+			border-left-width: 10px;
+			border-top-width: 10px;
+			border-right-width: 10px;
+			border-bottom-width: 20px;
+			margin-left:5px;
+			margin-right:5px;
+			margin-top:5px;
+			margin-bottom:5px;
+			}
+			
+		.lbGallery ul li a:hover img {
+	/*background color on hover*/
+	border-color: #ffff00;
+	border-left-width: 5px;
+	border-top-width: 5px;
+	border-right-width: 5px;
+	border-bottom-width: 5px;
+		}
+			
+		#lightbox-container-image-box {
+			border-top: 2px solid #ff3300;
+			border-right: 2px solid #ff3300;
+			border-bottom: 2px solid #ff3300;
+			border-left: 2px solid #ff3300;
+			}
+			
+		#lightbox-container-image-data-box { 
+			border-top: 0px;
+			border-right: 2px solid #ff3300;
+			border-bottom: 2px solid #ff3300;
+			border-left: 2px solid #ff3300;
+			}
+/* EndOAWidget_Instance_2127022 */
+</style>
+<script type="text/xml">
+<!--
+<oa:widgets>
+  <oa:widget wid="2127022" binding="#gallery" />
+  <oa:widget wid="2127022" binding="#gallery_2" />
+</oa:widgets>
+-->
+</script>
+<style type="text/css">
+/* BeginOAWidget_Instance_2127022: #gallery_2 */
+
+		.lbGallery {
+	padding-left: 5px;
+	padding-top: 20px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	width: auto;
+	height: auto;
+	text-align: center;
+		}
+		.lbGallery ul { list-style: none; margin:0;padding:0; }
+		.lbGallery ul li { display: inline;margin:0;padding:0; }
+		.lbGallery ul li a{text-decoration:none;}
+			
+		.lbGallery ul li a img {
+			/*border color, width and margin for the images*/
+			border-color: #ffffff;
+			border-left-width: 10px;
+			border-top-width: 10px;
+			border-right-width: 10px;
+			border-bottom-width: 20px;
+			margin-left:5px;
+			margin-right:5px;
+			margin-top:5px;
+			margin-bottom:5px;
+			}
+			
+		.lbGallery ul li a:hover img {
+	border-left-width: 10px;
+	border-top-width: 10px;
+	border-right-width: 10px;
+	border-bottom-width: 20px;
+	outline-color: #900;
+	outline-style: solid;
+	outline-width: thin;
+		}
+			
+		#lightbox-container-image-box {
+			border-top: 2px solid #ff3300;
+			border-right: 2px solid #ff3300;
+			border-bottom: 2px solid #ff3300;
+			border-left: 2px solid #ff3300;
+			}
+			
+		#lightbox-container-image-data-box { 
+			border-top: 0px;
+			border-right: 2px solid #ff3300;
+			border-bottom: 2px solid #ff3300;
+			border-left: 2px solid #ff3300;
+			}
+/* EndOAWidget_Instance_2127022 */
+</style>
+</head> 
+<body topmargin="3 px" marginheight="3 px">
+<div id="home" data-role="page">
+
+  <div data-role="content">
+    <div id="branding"></div>
+    
+   	  <h3 align="center"><u>WELCOME TO PROPERTYINVESTS</u></h3>
+    	<p align="center">Propertyinvests inspired by visionary leadership strive to provides complete infrastructure in property purchase and investment. Propertyinvests creates a complete platform of communication and interactive between financier, legal, valuer, business networking and investors.</p>
+    	<h3 align="center">Property Investment Starts Here...</h3>
+<blockquote>
+          <p align="center"><a href="#pageCategories" data-transition="flip">CATEGORIES</a></p>
+          <p align="center"><a href="#pageContactUs" data-transition="flip">CONTACT US</a></p>
+      <p align="center"><a href="#pageAbout" data-transition="flip">ABOUT</a></p>
+    </blockquote>
+        
+        		
+  </div>
+</div>
+ </div>
+
+
+
+
+
+<div id="pageCategories" data-role="page">
+<div data-role="header" data-position="fixed" data-fullscreen="true">
+        <h1>Categories</h1>
+  </div>
+<div data-role="content">
+	  <div data-role="collapsible-set">
+	    <div data-role="collapsible">
+	      <h3>Residential</h3>
+          <ul data-role="listview">
+            <ul>
+            <hr>
+              <li><a href="#page-nova-info" data-transition="flip">Nova</a></li>
+            <hr>
+              <li><a href="#page-meringin-info" data-transition="flip">Taman Bukit Meringin</a></li>
+            <hr>
+              <li><a href="#page-harmony-info" data-transition="flip">Harmony Park</a></li>
+            <hr>
+              <li><a href="#page-ara-info" data-transition="flip">Ara Aman</a></li>
+            <hr>
+              <li><a href="#page-gurney-info" data-transition="flip">Gurney Residence</a></li>
+            <hr>
+            </ul>
+          </ul>
+        </div>
+        
+	    <div data-role="collapsible" data-collapsed="true">
+	      <h3>Commercial</h3>
+	      <ul data-role="listview">
+	        <ul>
+            <hr>
+	          <li><a href="#page-kbc-info" title="FREEHOLD" data-transition="flip">Kiara Business Centre</a></li>
+	        <hr>
+              <li><a href="#page-kiarap-info" title="FREEHOLD"data-transition="flip">Kiara Plaza</a></li>
+	        <hr>
+              <li><a href="#page-kipsend-info" data-transition="flip">KIP Sendayan</a></li>
+	        <hr>
+              <li><a href="#page-kipsent-info" data-transition="flip">KIP Sentral, KLIA</a></li>
+	        <hr>
+              <li><a href="#page-kipm-info" data-transition="flip">KIP Utama, Melaka</a></li>
+            <hr>
+            </ul>
+          </ul>
+        </div>
+        
+	    <div data-role="collapsible" data-collapsed="true">
+	      <h3>Industrial</h3>
+	      <ul data-role="listview">
+	        <ul>
+            <hr>
+	          <li><a href="#page-lekas18-info" data-transition="flip">Lekas 18</a></li>
+	        <hr>
+              <li><a href="#page-langat18-info" data-transition="flip">Langat 18</a></li>
+	        <hr>  
+              <li><a href="#page-tech6-info" data-transition="flip">Semenyih Hi-Tech 6</a></li>
+	        <hr>
+              <li><a href="#page-tech7-info" data-transition="flip">Semenyih Hi-Tech 7</a></li>
+            <hr>
+            </ul>
+          </ul>
+        </div>
+  </div>
+    
+  </div>
+</div>
+  </div>
+
+
+
+
+
+
+<div id="pageContactUs" data-role="page">
+	<div data-role="header" data-position="fixed" data-fullscreen="true">
+		<h1>Contact Us</h1>
+  </div>
+	<div data-role="content">
+	  <div data-role="collapsible-set">
+      
+      	    <div data-role="collapsible" data-collapsed="true">
+	       <h3>Andy Lum</h3>
+           <hr>
+	      	<div class="ui-grid-a" id="andy-info">	
+			<div class="ui-block-a">
+			<h3>Andy Lum</h3>
+			<p>sanhong@propertyinvests<br>
+            .com.my</p>		
+			</div>		
+			<div class="ui-block-b">
+				<img src="nopic.jpg"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-andy">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60192996565">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:sanhong@propertyinvests.com.my">Email</a></div>
+                </div>	
+			</div>
+            <hr>
+      </div>
+      
+        <div data-role="collapsible" data-collapsed="true">
+	       <h3>Alex Lee</h3>
+           <hr>
+	      	<div class="ui-grid-a" id="alex-info">	
+			<div class="ui-block-a">
+			<h3>Alex Lee</h3>
+			<p>alexlee@propertyinvests<br>
+            .com.my</p>		
+			</div>		
+			<div class="ui-block-b">
+				<img src="nopic.jpg"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-alex">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60103633389">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:alexlee@propertyinvests.com.my">Email</a></div>
+                </div>	
+			</div>
+            <hr>
+      </div>
+      
+      <div data-role="collapsible" data-collapsed="true">
+	       <h3>Jeffry Chan</h3>
+           <hr>
+	      	<div class="ui-grid-a" id="jeff-info">	
+			<div class="ui-block-a">
+			<h3>Jeffry Chan</h3>
+			<p>jcchan@propertyinvests<br>
+            .com.my</p>		
+			</div>		
+			<div class="ui-block-b">
+				<img src="jeffrychan.jpg" width="129" height="172"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-jeff">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60192066363">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:jcchan@propertyinvests.com.my">Email</a></div>
+                </div>	
+			</div>
+            <hr>
+      </div>
+      
+      
+	    <div data-role="collapsible">
+	      	<h3>Kelvin Kau</h3>
+            <hr>
+	      	<div class="ui-grid-a" id="kelvin-info">	
+			<div class="ui-block-a">
+			<h3>Kelvin Kau</h3>
+			<p>kelvinkau88@gmail.com</p>		
+			</div>		
+			    <div class="ui-block-b">
+				<img src="kelvin.jpg" width="129" height="172"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-kelvin">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60192222078">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:kelvinkau88@gmail.com">Email</a></div>
+                </div>
+			</div>
+            <hr>
+        </div>
+        
+        <div data-role="collapsible">
+	      	<h3>Braxton Koon</h3>
+            <hr>
+	      	<div class="ui-grid-a" id="braxton-info">	
+			<div class="ui-block-a">
+			<h3>Braxton Koon</h3>
+			<p>braxtonkoon@propertyinvests<br>
+            .com.my</p>		
+			</div>		
+			    <div class="ui-block-b">
+				<img src="nopic.jpg" width="129" height="172"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-braxton">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60196519911">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:braxtonkoon@propertyinvests.com.my">Email</a></div>
+                </div>
+			</div>
+            <hr>
+        </div>
+        
+        
+	    <div data-role="collapsible" data-collapsed="true">
+	      <h3>Lee Shu Hui</h3>
+          <hr>
+	      	<div class="ui-grid-a" id="lsh-info">	
+			<div class="ui-block-a">
+			<h3>Lee Shu Hui</h3>
+			<p>shuhui@artsource.com.my</p>		
+			</div>		
+			<div class="ui-block-b">
+				<img src="nopic.jpg"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-lsh">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60192222078">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:shuhui@artsource.com.my">Email</a></div>
+                </div>
+			</div>
+            <hr>
+        </div>
+      
+      
+            <div data-role="collapsible" data-collapsed="true">
+	       <h3>Money Chee</h3>
+           <hr>
+	      	<div class="ui-grid-a" id="money-info">	
+			<div class="ui-block-a">
+			<h3>Money Chee</h3>
+			<p>hann@artsource.com.my</p>		
+			</div>		
+			<div class="ui-block-b">
+				<img src="nopic.jpg"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-money">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60102258363">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:hann@artsource.com.my">Email</a></div>
+                </div>	
+			</div>
+            <hr>
+      </div>
+      
+      
+	
+    	<div data-role="collapsible" data-collapsed="true">
+	       <h3>Winnie Chee</h3>
+           <hr>
+	      	<div class="ui-grid-a" id="winnie-info">	
+			<div class="ui-block-a">
+			<h3>Winnie Chee</h3>
+			<p>winnie@propertyinvests<br>
+            .com.my</p>		
+			</div>		
+			<div class="ui-block-b">
+				<img src="winnie.jpg"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-winnie">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60192262413">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:winnie@propertyinvests.com.my">Email</a></div>
+                </div>
+			</div>
+            <hr>
+      </div>
+      
+      <div data-role="collapsible" data-collapsed="true">
+	       <h3>YC Lee</h3>
+           <hr>
+	      	<div class="ui-grid-a" id="yc-info">	
+			<div class="ui-block-a">
+			<h3>YC Lee</h3>
+			<p>yclee@propertyinvests<br>
+            .com.my</p>		
+			</div>		
+			<div class="ui-block-b">
+				<img src="yclee.jpg"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-yc">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60196432799">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:yclee@propertyinvests.com.my">Email</a></div>
+                </div>	
+			</div>
+            <hr>
+      </div>
+      
+      <div data-role="collapsible" data-collapsed="true">
+	       <h3>Yvonne Loh</h3>
+           <hr>
+	      	<div class="ui-grid-a" id="yvonne-info">	
+			<div class="ui-block-a">
+			<h3>Yvonne Loh</h3>
+			<p>yvonneloh@artsource.com.my</p>		
+			</div>		
+			<div class="ui-block-b">
+				<img src="yvonne.jpg"/>
+			</div>
+			</div><!-- /grid-a -->
+			<div id="contact-btn-yvonne">	 	
+                <div class="ui-grid-a">
+                  <div class="ui-block-a"><a href="tel:+60124222978">Call</a></div>
+                  <div class="ui-block-b"><a href="mailto:yvonneloh@propertyinvests.com.my">Email</a></div>
+                </div>
+			</div>
+            <hr>
+      </div>
+    </div>
+    
+    
+	</div>
+</div>
+
+
+<div id="pageAbout" data-role="page">
+	<div data-role="header" data-position="fixed" data-fullscreen="true">
+		<h1>About</h1>
+	</div>
+	<div data-role="content">	
+	<div data-role="content">	
+		<div class="ui-grid-a" id="about">	
+		<div class="ui-block-a">
+		<h3> Corporate Office</h3>
+		<p>Unit A-6-8, Block A, Level 6,<br>
+		Megan Phoenix Business Centre,<br>
+        Jalan 2/142A, 56000 Cheras,<br>
+        Wilayah Persekutuan, K.L.<br>
+        <strong><u>Website:</u></strong><br>
+        www.propertyinvests.com.my<br>
+        <strong>Hotline:</strong> 1800-888-162<br>
+        <strong>Tel:</strong> +603-9107 5116</p>
+		</div>
+		<div class="ui-block-b">
+		  <img src="01_maps.jpg" alt="plan jeanette"/>
+		  </div>
+	</div><!-- /grid-a -->
+	<div id="contact_buttons">	
+		<a href="https://www.google.com.my/maps/place/3%C2%B004'40.5%22N+101%C2%B044'37.2%22E/@3.077905,101.743681,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=en" data-role="button" data-icon="maps"> Find us on Google Maps </a> 	
+		<a href="tel:1800888162"  data-role="button" data-icon="tel"> Call us </a>	
+	</div>	
+	<hr/>
+	</div>	
+	</div>
+</div>
+
+
+<div id="page-nova-info" data-role="page">
+	<div data-role="header">
+		<h1>Nova</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-nova-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/Jalan+Residen/@3.2288789,101.6678044,16z/data=!4m2!3m1!1s0x31cc47a99d69a435:0x4bcbd33055b0456a?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+		The first, the only and the last of its kind in exclusive Sri Utara.
+		<h3>The brightest star … among other shining stars</h3>
+		When a place of residence becomes a landmark of innovation and exclusivity, any measure to lift its name higher would be a seamless effort. Nova @ Sri Utara is one such landmark. Having aptly positioned itself as a neighborhood that's a class above the rest in the vicinity, it is now scaling to greater heights to give form to a distinctly lake-front private gated and guarded community of elite homes within it.<br>
+        <br>
+		Like a star that shines the brightest, this new private haven for a selective group of individuals will rise to become an address that is synonymous with prestige, opulence and luxury.
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+
+
+
+<div id="page-nova-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+    
+	  <div id="gallery" class="lbGallery">
+		  <ul>
+		    <li><a href="images/nova1.jpg" title=""><img src="images/thumb-nova1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/nova2.jpg" title=""><img src="images/thumb-nova2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/nova3.jpg" title=""><img src="images/thumb-nova3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/nova4.jpg" title=""><img src="images/thumb-nova4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/nova5.jpg" title=""><img src="images/thumb-nova5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova6.jpg" title=""><img src="images/thumb-nova6.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova7.jpg" title=""><img src="images/thumb-nova7.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova8.jpg" title=""><img src="images/thumb-nova8.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova9.jpg" title=""><img src="images/thumb-nova9.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova10.jpg" title=""><img src="images/thumb-nova10.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova11.jpg" title=""><img src="images/thumb-nova11.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova12.jpg" title=""><img src="images/thumb-nova12.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova13.jpg" title=""><img src="images/thumb-nova13.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova14.jpg" title=""><img src="images/thumb-nova14.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova15.jpg" title=""><img src="images/thumb-nova15.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova16.jpg" title=""><img src="images/thumb-nova16.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova17.jpg" title=""><img src="images/thumb-nova17.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/nova18.jpg" title=""><img src="images/thumb-nova18.jpg" width="72" height="72"/></a></li>
+			</ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery
+
+		$(function(){
+			$('#gallery a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+// EndOAWidget_Instance_2127022
+        </script>
+
+	<div data-role="footer" data-position="fixed">
+		<a href="#page-nova-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+  
+
+<div id="page-meringin-info" data-role="page">
+	<div data-role="header">
+		<h1>Taman Bukit Meringin</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-meringin-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/Taman+Meringin/@2.9843136,101.7598328,17z/data=!4m2!3m1!1s0x31cdcbafcbccdd6f:0x9c8a817a3b02771b?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <ul>
+	    <li>Pricing: 95 - RM 2.688M / 128 - RM 2.388M</li>
+	    <li>Freehold</li>
+	    <li>Within a trans-urban neighborhood that is vibrant lively yet peaceful.</li>
+	    <li>Easy access to excellent networks of highway: Silk highway, Plus highway, Besraya highway, LDP highway and Cheras-Kajang highway.</li>
+	    <li>Close distance to amenities such as Jaya Jusco Cheras Selatan, Alamanda Mall, Bangi Commercial Centre, The Mines Shopping Centre, Mines Convention Centre and many more.</li>
+	    <li>Surrounded public amenities include: Serdang Hospital, Uniten, UKM Bangi, University Putra Malaysia, Bangi Traning Centre, Equine Park and Putrajaya Parks and Wetland.</li>
+	    <li>Leisure facilities such as Kajang Hill Golf Resorts, Bangi Golf Resorts, Bukit Unggul Golf Resorts, Upm Golf and Grand Continental Bangi are all within 10 to 20 minutes drive.</li>
+      </ul>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-meringin-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+    <div id="gallery_2" class="lbGallery">
+      <ul>
+		    <li><a href="images/tbm1.jpg" title=""><img src="images/thumb-tbm1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/tbm2.jpg" title=""><img src="images/thumb-tbm2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/tbm3.jpg" title=""><img src="images/thumb-tbm3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/tbm4.jpg" title=""><img src="images/thumb-tbm4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/tbm5.jpg" title=""><img src="images/thumb-tbm5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm6.jpg" title=""><img src="images/thumb-tbm6.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm7.jpg" title=""><img src="images/thumb-tbm7.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm8.jpg" title=""><img src="images/thumb-tbm8.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm9.jpg" title=""><img src="images/thumb-tbm9.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm10.jpg" title=""><img src="images/thumb-tbm10.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm11.jpg" title=""><img src="images/thumb-tbm11.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm12.jpg" title=""><img src="images/thumb-tbm12.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm13.jpg" title=""><img src="images/thumb-tbm13.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm14.jpg" title=""><img src="images/thumb-tbm14.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm15.jpg" title=""><img src="images/thumb-tbm15.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/tbm16.jpg" title=""><img src="images/thumb-tbm16.jpg" width="72" height="72"/></a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_2
+
+		$(function(){
+			$('#gallery_2 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+// EndOAWidget_Instance_2127022
+    </script>
+<div data-role="footer" data-position="fixed">
+	  <a href="#page-meringin-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+<div id="page-harmony-info" data-role="page">
+	<div data-role="header">
+		<h1>Harmony Park</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-harmony-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/B18/@2.8771859,101.6957455,16z/data=!4m2!3m1!1s0x31cdb802dcfaebcb:0xfb0aa6689e04e40?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <p>Living Green, with the only conceptual project in Dengkil.</p>
+	  <div>Harmony Park received an overwhelming response with Phase 1 selling well even before its show unit was open to public. Harmony Park has a total of 118 units (114 Semi Detached, 4 Bungalows) and  expected to complete in 2014.</div>
+	  <ul>
+	    <li>Reputable developer with completed project at RM1.5 Billion GDV;</li>
+	    <li>The only conceptual project in Dengkil</li>
+	    <li>Modern design</li>
+	    <li>Spacious area with 35' x 80' land size</li>
+	    <li>Built up from 2,816 sqft</li>
+	    <li>Freehold</li>
+	    <li>Individual title</li>
+	    <li>Guarded precinct</li>
+	    <li>Easy access: Maju Express Way (MEX), Damansara-Puchong Highway (LDP), Elite Highway</li>
+	    <li>Great nearby amenities, retail shops, petrol stations, restaurants, banks, schools and more</li>
+	    <li>Clubhouse with swimming pool, Jogging Zone, Splash Pad, Pond, Modern Playground, BBQ area, Sepak Takraw &amp; badminton court</li>
+      </ul>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-harmony-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_3" class="lbGallery">
+		  <ul>
+		    <li><a href="images/hp1.jpg" title=""><img src="images/thumb-hp1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/hp2.jpg" title=""><img src="images/thumb-hp2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/hp3.jpg" title=""><img src="images/thumb-hp3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/hp4.jpg" title=""><img src="images/thumb-hp4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/hp5.jpg" title=""><img src="images/thumb-hp5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp6.jpg" title=""><img src="images/thumb-hp6.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp7.jpg" title=""><img src="images/thumb-hp7.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp8.jpg" title=""><img src="images/thumb-hp8.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp9.jpg" title=""><img src="images/thumb-hp9.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp10.jpg" title=""><img src="images/thumb-hp10.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp11.jpg" title=""><img src="images/thumb-hp11.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp12.jpg" title=""><img src="images/thumb-hp12.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp13.jpg" title=""><img src="images/thumb-hp13.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp14.jpg" title=""><img src="images/thumb-hp14.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp15.jpg" title=""><img src="images/thumb-hp15.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp16.jpg" title=""><img src="images/thumb-hp16.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp17.jpg" title=""><img src="images/thumb-hp17.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp18.jpg" title=""><img src="images/thumb-hp18.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp19.jpg" title=""><img src="images/thumb-hp19.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/hp20.jpg" title=""><img src="images/thumb-hp20.jpg" width="72" height="72"/></a></li>
+            
+	    </ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_3
+
+		$(function(){
+			$('#gallery_3 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+// EndOAWidget_Instance_2127022
+        </script>
+
+	<div data-role="footer" data-position="fixed">
+		<a href="#page-harmony-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+<div id="page-ara-info" data-role="page">
+	<div data-role="header">
+		<h1>Ara Aman, Bandar Utama</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-ara-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/Laman+Ara+Utama/@3.135394,101.609198,17z/data=!3m1!4b1!4m2!3m1!1s0x31cc4ec976fe0613:0x1e2cba6b8a953bb9?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <ul>
+	    <li>6 units of Boutique Homes</li>
+	    <li>Land size up to 7,500 sq ft.</li>
+	    <li>Built up to 6,300 sq ft.</li>
+	    <li>Individual design and layout.</li>
+	    <li>At the heart of Petaling Jaya. Neighboring Damansara Jaya and Bandar Utama.</li>
+      </ul>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-ara-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_4" class="lbGallery">
+		  <ul>
+		    <li><a href="images/ara1.jpg" title=""><img src="images/thumb-ara1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/ara2.jpg" title=""><img src="images/thumb-ara2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/ara3.jpg" title=""><img src="images/thumb-ara3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/ara4.jpg" title=""><img src="images/thumb-ara4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/ara5.jpg" title=""><img src="images/thumb-ara5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/ara6.jpg" title=""><img src="images/thumb-ara6.jpg" width="72" height="72"/></a></li>
+            
+	    </ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_4
+
+		$(function(){
+			$('#gallery_4 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+
+	<div data-role="footer" data-position="fixed">
+		<a href="#page-ara-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+
+<div id="page-gurney-info" data-role="page">
+	<div data-role="header">
+		<h1 class="ui-btn-corner-all">Gurney Residence</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-gurney-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/Jalan+Gurney/@3.1676586,101.7146143,18z/data=!3m1!4b1!4m2!3m1!1s0x31cc37dc44c8aca9:0xd9e92059de872a2c?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+              </ul>
+      </div>
+  </div>
+	<div data-role="content">
+	  <p>Located along Kuala Lumpur’s main arterial road, Gurney Residence offers 18 limited boutique homes or offices in the heart of city.</p>
+	  <p>CONVENIENCE<br>
+	    Minutes away from all major Shopping<br>
+	    Malls, F&amp;B Outlets, Hotels, Convention Centres<br>
+      and Embassies</p>
+	  <p>SMART<br>
+	    Living with the best connectivity and<br>
+      E-Home Management System</p>
+	  <p>EXTENDED COMFORT WITH STYLE<br>
+	    You’ll find spaces covered with<br>
+      quality and elegance</p>
+	  <p>PRIVATE SPACE<br>
+	    Bathing rejuvenates all of our senses,<br>
+      and provides comfort for wellbeing</p>
+	  <p>LIFESTYLE<br>
+      For business, leisure and relaxation</p>
+	  <p>THE PASSAGE<br>
+	    Greeted by simplicity yet<br>
+      elegant as enter to the Residence</p>
+	  <p>THE ROOM<br>
+      An oasis of energy and quietude</p>
+	  <p>MINIMALIST<br>
+      Solutions to the rectangular and tube-shape kitchens</p>
+	  <p>LAND AREA : 12250 sft<br>
+      TITLE : RESIDENTIAL<br>
+      LAND TENURE : FREEHOLD<br>
+      DEVELOPMENT : 1 Block of 6 storey boutique apartment with 18 homes.</p>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-gurney-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<a href="#page-gurney-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+
+<div id="page-kbc-info" data-role="page">
+	<div data-role="header">
+		<h1>Kiara Business Centre</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-kbc-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/1/@2.9623585,101.837148,17z/data=!3m1!4b1!4m2!3m1!1s0x31cdcc2e0df81981:0xd9cd7bcb61699cf4?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <ul>
+	    <li>Freehold</li>
+	    <li>Strategically located in the most growth potential of Southern Industrial Corridor of Selangor State. Near to Bandar Sunway Semenyih.</li>
+	    <li>2 and 3 storey shop office with modern design.</li>
+	    <li>Size of the shop: 24' x 75', 32' x 75', 24' x 80', 32' x 80'.</li>
+	    <li>Built up area from 5,400sf to 12,176sf.</li>
+      </ul>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-kbc-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_5" class="lbGallery">
+		  <ul>
+		    <li><a href="images/kbc1.jpg" title=""><img src="images/thumb-kbc1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kbc2.jpg" title=""><img src="images/thumb-kbc2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kbc3.jpg" title=""><img src="images/thumb-kbc3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kbc4.jpg" title=""><img src="images/thumb-kbc4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kbc5.jpg" title=""><img src="images/thumb-kbc5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc6.jpg" title=""><img src="images/thumb-kbc6.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc7.jpg" title=""><img src="images/thumb-kbc7.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc8.jpg" title=""><img src="images/thumb-kbc8.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc9.jpg" title=""><img src="images/thumb-kbc9.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc10.jpg" title=""><img src="images/thumb-kbc10.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc11.jpg" title=""><img src="images/thumb-kbc11.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc12.jpg" title=""><img src="images/thumb-kbc12.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc13.jpg" title=""><img src="images/thumb-kbc13.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc14.jpg" title=""><img src="images/thumb-kbc14.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc15.jpg" title=""><img src="images/thumb-kbc15.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc16.jpg" title=""><img src="images/thumb-kbc16.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc17.jpg" title=""><img src="images/thumb-kbc17.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc18.jpg" title=""><img src="images/thumb-kbc18.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc19.jpg" title=""><img src="images/thumb-kbc19.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc20.jpg" title=""><img src="images/thumb-kbc20.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc21.jpg" title=""><img src="images/thumb-kbc21.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc22.jpg" title=""><img src="images/thumb-kbc22.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kbc23.jpg" title=""><img src="images/thumb-kbc23.jpg" width="72" height="72"/></a></li>
+            
+	    </ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_5
+
+		$(function(){
+			$('#gallery_5 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+
+	<div data-role="footer" data-position="fixed">
+		<a href="#page-kbc-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+
+<div id="page-kiarap-info" data-role="page">
+	<div data-role="header">
+		<h1>Kiara Plaza</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-kiarap-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/1/@2.9640715,101.835973,17z/data=!3m1!4b1!4m2!3m1!1s0x31cdcc31c4f38699:0x4a7d212c5339f074?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <ul>
+	    <li>Freehold strata commercial building and service Apartment/SOHO.</li>
+	    <li>47 Unit of strata commercial building and 272 Unit of service apartment/SOHO.</li>
+	    <li>Located oppointe Kiara Business Centre at bandar sunway semenyih.</li>
+	    <li>Commercial building size range from 26' X 65'.</li>
+	    <li>Service apartment size range from 450 sq ft to 1100 sq ft.</li>
+      </ul>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-kiarap-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_6" class="lbGallery">
+	    <ul>
+		    <li><a href="images/kp1.jpg" title=""><img src="images/thumb-kp1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kp2.jpg" title=""><img src="images/thumb-kp2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kp3.jpg" title=""><img src="images/thumb-kp3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kp4.jpg" title=""><img src="images/thumb-kp4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kp5.jpg" title=""><img src="images/thumb-kp5.jpg" width="72" height="72"/></a></li>
+          <li><a href="images/kp6.jpg" title=""><img src="images/thumb-kp6.jpg" width="72" height="72"/></a></li>
+            
+	    </ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_6
+
+		$(function(){
+			$('#gallery_6 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+
+<div data-role="footer" data-position="fixed">
+		<a href="#page-kiarap-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+
+<div id="page-kipsend-info" data-role="page">
+	<div data-role="header">
+		<h1>KIP Sendayan</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-kipsend-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/2%C2%B041'52.6%22N+101%C2%B051'35.1%22E/@2.697953,101.859744,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <p>Bandar Sri Sendayan is an up and coming township in Seremban. With a vast area of 5,000 acres of land, there will be numerous integrated developement ranging from commercial, industrial and residential development within the township.</p>
+	  <p>KIP Group will have a KIP Mart and 45 units of commercial shoplots project with ample of parking space within Bandar Sri Sendayan.</p>
+	  <p>Commercial shoplots sizes are from 22' x 60' with a built up of 2,650 sqft - 9,872 sqft.</p>
+<ul>
+      <li>FREEHOLD</li>
+	    <li>Pricing RM664,600.00 onwards</li>
+      </ul>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-kipsend-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_7" class="lbGallery">
+		  <ul>
+		    <li><a href="images/kipsend1.jpg" title=""><img src="images/thumb-kipsend1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsend2.jpg" title=""><img src="images/thumb-kipsend2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsend3.jpg" title=""><img src="images/thumb-kipsend3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsend4.jpg" title=""><img src="images/thumb-kipsend4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsend5.jpg" title=""><img src="images/thumb-kipsend5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kipsend6.jpg" title=""><img src="images/thumb-kipsend6.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsend7.jpg" title=""><img src="images/thumb-kipsend7.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsend8.jpg" title=""><img src="images/thumb-kipsend8.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsend9.jpg" title=""><img src="images/thumb-kipsend9.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kipsend10.jpg" title=""><img src="images/thumb-kipsend10.jpg" width="72" height="72"/></a></li>
+            
+	    </ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_7
+
+		$(function(){
+			$('#gallery_7 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+
+  <div data-role="footer" data-position="fixed">
+		<a href="#page-kipsend-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+
+<div id="page-kipsent-info" data-role="page">
+	<div data-role="header">
+		<h1>KIP Sentral, KLIA</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-kipsent-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/2%C2%B049'24.4%22N+101%C2%B041'39.0%22E/@2.823458,101.694174,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <p>KIP Sentral is approximately 10 minutes away from KLIA and is near to all the renowned universities such as Inti Colleges, Nilai University and University Sains Islam Malaysia. Xiamen University (being the first Chinese university to open an overseas branch) has also confirmed to set up a campus at Salak Tinggi which is also 5 minutes away from KIP Sentral. The existing Mcdonalds and Shell Station are always filled with people. Therefore, having our large scale mixed development would be great. This will be the up and coming entertainment lifestyle place as there are no similar development within the area.</p>
+	  <p>There are 2 type of shoplots available in KIP Sentral:</p>
+	  <ol>
+	    <li> 104 units of 2 &amp; 3 storey terrace shoplots - measuring from 22' x 75' to 42' x 75' </li>
+	    <li> 28 units of 3 storey Semi-D shoplots - measuring 38' x 75'</li>
+      </ol>
+	  <p>WIthin KIP Sentral, there will also be a KIPMart, KIP Hotel and Home Mart.</p>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-kipsent-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_8" class="lbGallery">
+		  <ul>
+		    <li><a href="images/kipsent1.jpg" title=""><img src="images/thumb-kipsent1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsent2.jpg" title=""><img src="images/thumb-kipsent2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsent3.jpg" title=""><img src="images/thumb-kipsent3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsent4.jpg" title=""><img src="images/thumb-kipsent4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipsent5.jpg" title=""><img src="images/thumb-kipsent5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kipsent6.jpg" title=""><img src="images/thumb-kipsent6.jpg" width="72" height="72"/></a></li>
+            
+	    </ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_8
+
+		$(function(){
+			$('#gallery_8 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+
+	<div data-role="footer" data-position="fixed">
+		<a href="#page-kipsent-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+  
+
+<div id="page-kipm-info" data-role="page">
+	<div data-role="header">
+		<h1>KIP Utama, Melaka</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-kipm-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/Kip+Mart/@2.233542,102.250035,17z/data=!3m1!4b1!4m2!3m1!1s0x31d1f01edbdea759:0x61fe899557ea357e?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <p>KIP Malacca is an integrated development brought to you by KIP Group which comprises of KIP Mart, a hotel equipped with 368 rooms, a commercial hub with several phases of shoplots/offices.</p>
+	  <p>Phase 1 of the 24 shoplots and offices ranging from 2 storey and 3 storey with the measurement of 22' x 70' and 24' x 70' have been sold out.</p>
+	  <p>Phase 2 will be launch in the near future.</p>
+	  <p>KIP Malacca is located at Batu Berendam Industrial area which is a strategic and  convenient location due its close proximity to Melaka Sentral Bus Station, one of the busiest area in Melaka, Melaka International  Airport, Melaka Raya (Town) and it is situated along Jalan Tun Fatimah which is linked to all the major expressway such as SPA, AMJ and North South Highway.</p>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-kipm-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_9" class="lbGallery">
+		  <ul>
+		    <li><a href="images/kipm1.jpg" title=""><img src="images/thumb-kipm1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipm2.jpg" title=""><img src="images/thumb-kipm2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipm3.jpg" title=""><img src="images/thumb-kipm3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipm4.jpg" title=""><img src="images/thumb-kipm4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipm5.jpg" title=""><img src="images/thumb-kipm5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kipm6.jpg" title=""><img src="images/thumb-kipm6.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/kipm7.jpg" title=""><img src="images/thumb-kipm7.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/kipm8.jpg" title=""><img src="images/thumb-kipm8.jpg" width="72" height="72"/></a></li>
+            
+	    </ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_9
+
+		$(function(){
+			$('#gallery_9 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+
+  <div data-role="footer" data-position="fixed">
+		<a href="#page-kipm-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+<div id="page-lekas18-info" data-role="page">
+	<div data-role="header">
+		<h1>Lekas 18</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-lekas18-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/2%C2%B056'08.6%22N+101%C2%B050'01.4%22E/@2.935731,101.833713,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <ul>
+	    <li>Pricing range between RM4.5M to RM 5.0 (3-Storey) | RM 2.5M to 3.0M (2-Storey)</li>
+	    <li>Freehold</li>
+	    <li>CF ready in Nov 2012</li>
+	    <li>GPS Coordinate - 2.936183N, 101.833348E</li>
+	    <li>Strategically located in the most growth potential of Southern Industrial Corridor of Selangor State.</li>
+	    <li>2 and 3 storey semi-detached corporate factory.</li>
+	    <li>24 units semi-detached corporate factory.</li>
+	    <li>Built up from 5,400sf to 15,593sf.</li>
+	    <li>Land area from 10,725sf to 15,593sf.</li>
+      </ul>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-lekas18-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_10" class="lbGallery">
+		  <ul>
+		    <li><a href="images/lekas1.jpg" title=""><img src="images/thumb-lekas1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/lekas2.jpg" title=""><img src="images/thumb-lekas2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/lekas3.jpg" title=""><img src="images/thumb-lekas3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/lekas4.jpg" title=""><img src="images/thumb-lekas4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/lekas5.jpg" title=""><img src="images/thumb-lekas5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/lekas6.jpg" title=""><img src="images/thumb-lekas6.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/lekas7.jpg" title=""><img src="images/thumb-lekas7.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/lekas8.jpg" title=""><img src="images/thumb-lekas8.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/lekas9.jpg" title=""><img src="images/thumb-lekas9.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/lekas10.jpg" title=""><img src="images/thumb-lekas10.jpg" width="72" height="72"/></a></li>
+	    </ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_10
+
+		$(function(){
+			$('#gallery_10 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+	<div data-role="footer" data-position="fixed">
+		<a href="#page-lekas-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+<div id="page-langat18-info" data-role="page">
+	<div data-role="header">
+		<h1>Langat 18, Olak Lempit</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-langat18-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/2%C2%B049'44.6%22N+101%C2%B036'35.7%22E/@2.829055,101.609907,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">
+	  <ul>
+	    <li>Pricing: RM 5.78M</li>
+	    <li>GPS Coordinate - GPS 2.574606N, 101.363710E</li>
+	    <li>Freehold</li>
+	    <li>Strategically located along Sepang/KLIA and Banting B20 Highway.</li>
+	    <li>Land size Approx 44,153sf to 46,522sf.</li>
+	    <li>Built up area 23,966sf to 25,125sf.</li>
+	    <li>3 storey detached corporate factory.</li>
+	    <li>Road frontage.</li>
+	    <li>Every unit with lift.</li>
+	    <li>Suitable for corporate office, showroom, factory and warehouse.</li>
+	    <li>Easy access to and from major highway.</li>
+      </ul>
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-langat18-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_11" class="lbGallery">
+		  <ul>
+		    <li><a href="images/langat1.jpg" title=""><img src="images/thumb-langat1.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/langat2.jpg" title=""><img src="images/thumb-langat2.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/langat3.jpg" title=""><img src="images/thumb-langat3.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/langat4.jpg" title=""><img src="images/thumb-langat4.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/langat5.jpg" title=""><img src="images/thumb-langat5.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/langat6.jpg" title=""><img src="images/thumb-langat6.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/langat7.jpg" title=""><img src="images/thumb-langat7.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/langat8.jpg" title=""><img src="images/thumb-langat8.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/langat9.jpg" title=""><img src="images/thumb-langat9.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/langat10.jpg" title=""><img src="images/thumb-langat10.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/langat11.jpg" title=""><img src="images/thumb-langat11.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/langat12.jpg" title=""><img src="images/thumb-langat12.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/langat13.jpg" title=""><img src="images/thumb-langat13.jpg" width="72" height="72"/></a></li>
+            <li><a href="images/langat14.jpg" title=""><img src="images/thumb-langat14.jpg" width="72" height="72"/></a></li>
+	    </ul>
+	  </div>
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_11
+
+		$(function(){
+			$('#gallery_11 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+	<div data-role="footer" data-position="fixed">
+		<a href="#page-langat-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+<div id="page-tech6-info" data-role="page">
+	<div data-role="header">
+		<h1>Hi-Tech 6</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-tech6-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="https://www.google.com.my/maps/place/2%C2%B059'23.4%22N+101%C2%B051'57.8%22E/@2.989824,101.866057,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=en" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">Located at the vicinity of Semenyih Town, about 8km from the town of Kajang. It is about 5km from the Semenyih new village turnoff to Jalan Sungai Lalang.<br>
+	  <br>
+    It is easily accessible from Kuala Lumpur, Petaling Jaya, Shah Alam, Putrajaya, Cyberjaya, KLIA and Seremban. Transportation and the transferring of merchandise is quick and convenient, allowing for greater efficiency and higher profits for businesses.<br>
+    <br>
+    Price	: RM 1.888 mil – RM 3.1 mil<br>
+Types	: 9 types (different sizes)<br>
+Land Area	: 11,000 sqft – 26,000 sqft<br>
+Built up Area	: 5,500 sqft – 7,200 sqft<br>
+Name	: Hi-Tech 6 (Semi-D Factory)<br>
+Location : Sungai Lalang, Semenyih<br>
+Title	 : Individual<br>
+Land Type : Freehold<br>
+Land size : 29.5 acres<br>
+Project density: 68 units of semi-D factory
+    </div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-tech6-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_12" class="lbGallery">
+		  <ul>
+		    <li><a href="images/tech61.jpg" title=""><img src="images/thumb-tech61.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/tech62.jpg" title=""><img src="images/thumb-tech62.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/tech63.jpg" title=""><img src="images/thumb-tech63.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/tech64.jpg" title=""><img src="images/thumb-tech64.jpg" width="72" height="72"/></a></li>
+	    </ul>
+	  </div>
+      
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_12
+
+		$(function(){
+			$('#gallery_12 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+        
+	<div data-role="footer" data-position="fixed">
+		<a href="#page-tech6-info" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+	</div>
+</div>
+
+
+<div id="page-tech7-info" data-role="page">
+	<div data-role="header" data-position="fixed">
+		<h1>Hi-Tech 7</h1>
+        	<div data-role="navbar">
+            	<ul>
+            		<li><a href="#page-tech7-gallery" class="ui-btn-active" data-transition="flip">Gallery</a></li>
+					<li><a href="#page-tech7-map" class="ui-btn-active" data-transition="flip">Map</a></li>
+                </ul>
+            </div>
+	</div>
+	<div data-role="content">	
+		info		
+	</div>
+	<div data-role="footer" data-position="fixed"><a href="#pageCategories" class="ui-btn-hover-b" data-icon="back" data-iconpos="notext" data-role="button" data-transition="fade">Button</a>
+		
+	</div>
+</div>
+
+
+<div id="page-tech7-gallery" data-role="page">
+	<div data-role="header">
+		<h1>Gallery</h1>
+	</div>
+	  <div id="gallery_13" class="lbGallery">
+		  <ul>
+		    <li><a href="images/tech62.jpg" title=""><img src="images/thumb-tech62.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/tech63.jpg" title=""><img src="images/thumb-tech63.jpg" width="72" height="72"/></a></li>
+		    <li><a href="images/tech64.jpg" title=""><img src="images/thumb-tech64.jpg" width="72" height="72"/></a></li>
+	    </ul>
+	  </div>
+      
+        <script type="text/javascript">
+// BeginOAWidget_Instance_2127022: #gallery_13
+
+		$(function(){
+			$('#gallery_13 a').lightBox({ 
+				imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'images/lightbox/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'images/lightbox/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'images/lightbox/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+				fixedNavigation:		true,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
+				containerResizeSpeed:	400,			 // Specify the resize duration of container image. These number are miliseconds. 400 is default.
+				overlayBgColor: 		"#ff9933",		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
+				overlayOpacity:			.6,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+				txtImage:				'Image',				//Default text of image
+				txtOf:					'of'
+			});
+		});
+		
+
+// EndOAWidget_Instance_2127022
+        </script>
+        
+	<div data-role="footer" data-position="fixed">
+
+		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#page-tech7-info" data-role="button">BACK</a></div>
+        
+        
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>

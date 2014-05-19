@@ -1,0 +1,40 @@
+@charset "utf-8";
+#home div blockquote p a {
+	font-size: 18px;
+	text-shadow: none;
+	color: #F33;
+}
+#pageCategories div div div h3 {
+	font-size: 20px;
+}
+#page-nova-info div p {
+	color: #FFF;
+}
+#page-nova-gallery div p {
+	color: #999;
+}
+#page-nova-map div p {
+	color: #999;
+}
+#pageAbout div div #about .ui-block-a p {
+	font-size: 14px;
+}
+#pageContactUs div div div #kelvin-info .ui-block-a p {
+	font-size: 16px;
+}
+#page-nova-info div p {
+	color: #FFF;
+}
+#pageAbout div div #about .ui-block-a p {
+	font-weight: bold;
+}
+#pageAbout div div #about .ui-block-a p {
+	font-weight: normal;
+}
+#page-nova-info div p {
+	color: #000;
+	text-decoration: none;
+}
+#page-nova-gallery script {
+	color: #008000;
+}

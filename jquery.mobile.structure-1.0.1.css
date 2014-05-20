@@ -38,3 +38,11 @@
 #page-nova-gallery script {
 	color: #008000;
 }
+#home div p {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+}
+#home div h3 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+}

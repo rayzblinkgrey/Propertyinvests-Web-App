@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <title>Propertyinvests Web App</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.mlcalc.com/widget-api.js"></script>
 	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
 	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
@@ -44,6 +47,7 @@ body {
 <script src="includes/ice/ice.js" type="text/javascript"></script>
 <script src="scripts/jquery.js" type="text/javascript"></script>
 <script src="scripts/lightbox.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
 <style type="text/css">
 /* BeginOAWidget_Instance_2127022: #gallery */
 
@@ -161,6 +165,7 @@ body {
 			}
 /* EndOAWidget_Instance_2127022 */
 </style>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
 </head> 
 <body topmargin="3 px" marginheight="3 px">
 <div id="home" data-role="page">
@@ -174,12 +179,46 @@ body {
 <blockquote>
           <p align="center"><a href="#pageCategories" data-transition="flip">CATEGORIES</a></p>
           <p align="center"><a href="#pageContactUs" data-transition="flip">CONTACT US</a></p>
+          <p align="center"><a href="#calc">MORTGAGE CALCULATOR</a></p>
       <p align="center"><a href="#pageAbout" data-transition="flip">ABOUT</a></p>
-    </blockquote>
+
+
+      
+       </blockquote>
         
         		
   </div>
+  
 </div>
+ </div>
+<div data-role="page" id="calc" data-theme="b">
+   <div data-role="header">
+     <h1>Header</h1>
+   </div>
+   <form action="http://www.mlcalc.com/" method="post" onsubmit="return mlcalcCalculate(this)">
+<input type="hidden" name="wl" value="en">
+
+<label><strong>Purchase price:</strong> RM<input type="text" name="ma" value="250,000"></label><br>
+<label><strong>Down payment:</strong> %<input type="text" name="dp" value="10"></label><br>
+<label><strong>Mortgage term:</strong> years<input type="text" name="mt" value="30"></label><br>
+<label><strong>Interest rate:</strong> %<input type="text" name="ir" value="5.5"></label><br>
+<label><strong>Property tax:</strong> RM<input type="text" name="pt" value="3,000"></label><br>
+<label><strong>Property insurance:</strong> RM<input type="text" name="pi" value="1,500"></label><br>
+<label><strong>PMI:</strong> %<input type="text" name="mi" value="0.52"> </label><br>
+<label><strong>First payment date (month):</strong> <input type="text" name="sm" value="3"></label><br>
+<label><strong>First payment date (year):</strong> <input type="text" name="sy" value="2010"></label><br>
+<label><strong>Amortization:</strong>
+   <label><input type="radio" name="as" value="year" checked="checked"> show by year</label>
+   <label><input type="radio" name="as" value="month"> show by month</label>
+   <label><input type="radio" name="as" value="none"> don't show</label>
+</label><br><br>
+<input type="submit" value="Calculate"><br><br>
+</form>
+Powered by<a href="http://www.mlcalc.com/">Mortgage Calculator</a>
+
+  <div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a></div>
+   </div>
  </div>
 
 
@@ -191,7 +230,7 @@ body {
         <h1>Categories</h1>
   </div>
 <div data-role="content">
-	  <div data-role="collapsible-set">
+	  <div data-role="collapsible-set" data-theme="a">
 	    <div data-role="collapsible">
 	      <h3>Residential</h3>
           <ul data-role="listview">
@@ -250,9 +289,9 @@ body {
     
   </div>
   
-  <div data-role="footer" data-position="fixed">
-	<div data-role="button"><a href="#home">HOME</a></div>
-</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a></div>
+	</div>
 
   </div>
 
@@ -266,9 +305,9 @@ body {
 		<h1>Contact Us</h1>
   </div>
 	<div data-role="content">
-	  <div data-role="collapsible-set">
+	  <div data-role="collapsible-set" data-theme="a">
       
-      	    <div data-role="collapsible" data-collapsed="true">
+      	    <div data-role="collapsible" data-icon="info" data-collapsed="true">
 	       <h3>Andy Lum</h3>
            <hr>
 	      	<div class="ui-grid-a" id="andy-info">	
@@ -300,7 +339,7 @@ body {
             .com.my</p>		
 			</div>		
 			<div class="ui-block-b">
-				<img src="nopic.jpg"/>
+				<img src="alexlee.jpg"/>
 			</div>
 			</div><!-- /grid-a -->
 			<div id="contact-btn-alex">	 	
@@ -489,8 +528,10 @@ body {
             <hr>
       </div>
     </div>
+	</div>
     
-    
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a></div>
 	</div>
 </div>
 
@@ -514,17 +555,25 @@ body {
         <strong>Tel:</strong> +603-9107 5116</p>
 		</div>
 		<div class="ui-block-b">
-		  <img src="01_maps.jpg" alt="plan jeanette"/>
+		  <img src="01_maps.jpg"/>
 		  </div>
 	</div><!-- /grid-a -->
 	<div id="contact_buttons">	
-		<a href="https://www.google.com.my/maps/place/3%C2%B004'40.5%22N+101%C2%B044'37.2%22E/@3.077905,101.743681,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=en" data-role="button" data-icon="maps"> Find us on Google Maps </a> 	
-		<a href="tel:1800888162"  data-role="button" data-icon="tel"> Call us </a>	
+		<a href="https://www.google.com.my/maps/place/3%C2%B004'40.5%22N+101%C2%B044'37.2%22E/@3.077905,101.743681,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=en" data-role="button" data-theme="a" data-icon="maps"> Find us on Google Maps </a> 	
+		<a href="tel:1800888162"  data-role="button" data-theme="a" data-icon="tel"> Call us </a>	
 	</div>	
 	<hr/>
 	</div>	
 	</div>
+    	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a></div>
+	</div>
+    
 </div>
+
+
+
+
 
 
 <div id="page-nova-info" data-role="page">
@@ -544,12 +593,11 @@ body {
         <br>
 		Like a star that shines the brightest, this new private haven for a selective group of individuals will rise to become an address that is synonymous with prestige, opulence and luxury.
 	</div>
+    
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
+    
 </div>
 
 
@@ -606,10 +654,7 @@ body {
         </script>
 
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -637,10 +682,7 @@ body {
       </ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -691,10 +733,7 @@ body {
 // EndOAWidget_Instance_2127022
     </script>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -727,10 +766,7 @@ body {
       </ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -787,10 +823,7 @@ body {
         </script>
 
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -815,10 +848,7 @@ body {
       </ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -862,10 +892,7 @@ body {
         </script>
 
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -911,10 +938,7 @@ body {
       DEVELOPMENT : 1 Block of 6 storey boutique apartment with 18 homes.</p>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -927,10 +951,7 @@ body {
 		Content		
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -956,10 +977,7 @@ body {
       </ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1020,10 +1038,7 @@ body {
         </script>
 
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1049,10 +1064,7 @@ body {
       </ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1099,10 +1111,7 @@ body {
         </script>
 
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1128,10 +1137,7 @@ body {
       </ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1179,10 +1185,7 @@ body {
         </script>
 
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1208,10 +1211,7 @@ body {
 	  <p>WIthin KIP Sentral, there will also be a KIPMart, KIP Hotel and Home Mart.</p>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1255,10 +1255,7 @@ body {
         </script>
 
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1281,10 +1278,7 @@ body {
 	  <p>KIP Malacca is located at Batu Berendam Industrial area which is a strategic and  convenient location due its close proximity to Melaka Sentral Bus Station, one of the busiest area in Melaka, Melaka International  Airport, Melaka Raya (Town) and it is situated along Jalan Tun Fatimah which is linked to all the major expressway such as SPA, AMJ and North South Highway.</p>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1330,10 +1324,7 @@ body {
         </script>
 
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1361,10 +1352,7 @@ body {
       </ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1410,10 +1398,7 @@ body {
 // EndOAWidget_Instance_2127022
         </script>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1444,10 +1429,7 @@ body {
       </ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1497,10 +1479,7 @@ body {
 // EndOAWidget_Instance_2127022
         </script>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1531,10 +1510,7 @@ Land size : 29.5 acres<br>
 Project density: 68 units of semi-D factory
     </div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1576,10 +1552,7 @@ Project density: 68 units of semi-D factory
         </script>
         
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1598,10 +1571,7 @@ Project density: 68 units of semi-D factory
 		info		
 	</div>
 	<div data-role="footer" data-position="fixed">
-
-		<div data-role="controlgroup" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
-        
-        
+		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a><a href="#pageCategories" data-role="button">CATEGORIES</a></div>
 	</div>
 </div>
 
@@ -1648,10 +1618,8 @@ Project density: 68 units of semi-D factory
         
 	</div>
 </div>
-
-
-
-
-
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+</script>
 </body>
 </html>

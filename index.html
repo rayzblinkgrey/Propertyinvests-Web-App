@@ -7,10 +7,10 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://cdn.mlcalc.com/widget-api.js"></script>
-	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
-	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
 <link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="jquery-mobile/style1.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="custom.css">
@@ -179,106 +179,99 @@ body {
 </style>
 <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
 </head> 
+
+
 <body topmargin="3 px" marginheight="3 px">
 <div id="home" data-role="page">
 
-  <div data-role="content">
+	<div data-role="content">
     <div id="branding"></div>
-    
-   	  <h3 align="center"><u>WELCOME TO PROPERTYINVESTS</u></h3>
-    	<p align="center">Propertyinvests inspired by visionary leadership strive to provides complete infrastructure in property purchase and investment. Propertyinvests creates a complete platform of communication and interactive between financier, legal, valuer, business networking and investors.</p>
+		<h3 align="center"><u>WELCOME TO PROPERTYINVESTS</u></h3>
+			<p align="center">Propertyinvests inspired by visionary leadership strive to provides complete infrastructure in property purchase and investment. Propertyinvests creates a complete platform of communication and interactive between financier, legal, valuer, business networking and investors.</p>
     	<h3 align="center">Property Investment Starts Here...</h3>
 <blockquote>
-          <p align="center"><a href="#pageCategories" data-transition="flip">CATEGORIES</a></p>
-          <p align="center"><a href="#pageContactUs" data-transition="flip">CONTACT US</a></p>
-          <p align="center"><a href="#calc">MORTGAGE CALCULATOR</a></p>
-      <p align="center"><a href="#pageAbout" data-transition="flip">ABOUT</a></p>
-
-
-      
-       </blockquote>
-        
-        		
-  </div>
-  
+        <p align="center"><a href="#pageCategories" data-transition="flip">CATEGORIES</a></p>
+        <p align="center"><a href="#pageContactUs" data-transition="flip">CONTACT US</a></p>
+        <p align="center"><a href="#calc">MORTGAGE CALCULATOR</a></p>
+		<p align="center"><a href="#pageAbout" data-transition="flip">ABOUT</a></p>
+</blockquote>
+	</div>
 </div>
- </div>
-<div data-role="page" id="calc" data-theme="b">
-   <div data-role="header">
-     <h1>Header</h1>
-   </div>
-   <form action="http://www.mlcalc.com/" method="post" onsubmit="return mlcalcCalculate(this)">
-<input type="hidden" name="wl" value="en">
 
-<label><strong>Purchase price:</strong> RM<input type="text" name="ma" value="250,000"></label><br>
-<label><strong>Down payment:</strong> %<input type="text" name="dp" value="10"></label><br>
-<label><strong>Mortgage term:</strong> years<input type="text" name="mt" value="30"></label><br>
-<label><strong>Interest rate:</strong> %<input type="text" name="ir" value="5.5"></label><br>
-<label><strong>Property tax:</strong> RM<input type="text" name="pt" value="3,000"></label><br>
-<label><strong>Property insurance:</strong> RM<input type="text" name="pi" value="1,500"></label><br>
-<label><strong>PMI:</strong> %<input type="text" name="mi" value="0.52"> </label><br>
-<label><strong>First payment date (month):</strong> <input type="text" name="sm" value="3"></label><br>
-<label><strong>First payment date (year):</strong> <input type="text" name="sy" value="2010"></label><br>
-<label><strong>Amortization:</strong>
-   <label><input type="radio" name="as" value="year" checked="checked"> show by year</label>
-   <label><input type="radio" name="as" value="month"> show by month</label>
-   <label><input type="radio" name="as" value="none"> don't show</label>
-</label><br><br>
-<input type="submit" value="Calculate"><br><br>
-</form>
+
+<div data-role="page" id="calc" data-theme="b">
+	<div data-role="header">
+		<h1>Header</h1>
+	</div>
+	<form action="http://www.mlcalc.com/" method="post" onsubmit="return mlcalcCalculate(this)">
+	<input type="hidden" name="wl" value="en">
+
+	<label><strong>Purchase price:</strong> RM<input type="text" name="ma" value="250,000"></label><br>
+	<label><strong>Down payment:</strong> %<input type="text" name="dp" value="10"></label><br>
+	<label><strong>Mortgage term:</strong> years<input type="text" name="mt" value="30"></label><br>
+	<label><strong>Interest rate:</strong> %<input type="text" name="ir" value="5.5"></label><br>
+	<label><strong>Property tax:</strong> RM<input type="text" name="pt" value="3,000"></label><br>
+	<label><strong>Property insurance:</strong> RM<input type="text" name="pi" value="1,500"></label><br>
+	<label><strong>PMI:</strong> %<input type="text" name="mi" value="0.52"> </label><br>
+	<label><strong>First payment date (month):</strong> <input type="text" name="sm" value="3"></label><br>
+	<label><strong>First payment date (year):</strong> <input type="text" name="sy" value="2010"></label><br>
+	<label><strong>Amortization:</strong>
+	<label><input type="radio" name="as" value="year" checked="checked"> show by year</label>
+	<label><input type="radio" name="as" value="month"> show by month</label>
+	<label><input type="radio" name="as" value="none"> don't show</label>
+	</label><br><br>
+	<input type="submit" value="Calculate"><br><br>
+	</form>
 Powered by<a href="http://www.mlcalc.com/">Mortgage Calculator</a>
 
-  <div data-role="footer" data-position="fixed">
-		<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a></div>
-   </div>
- </div>
-
-
-
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar" data-type="horizontal"><a href="#home" data-role="button">HOME</a></div>
+</div>
+</div>
 
 
 <div id="pageCategories" data-role="page">
-<div data-role="header" data-position="fixed" data-fullscreen="true">
+	<div data-role="header" data-position="fixed" data-fullscreen="true">
         <h1>Categories</h1>
-  </div>
-<div data-role="content">
-	  <div data-role="collapsible-set" data-theme="a">
-	    <div data-role="collapsible">
-	      <h3>Residential</h3>
-          <ul data-role="listview">
-            <ul>
+	</div>
+	<div data-role="content">
+		<div data-role="collapsible-set" data-theme="a">
+			<div data-role="collapsible">
+				<h3>Residential</h3>
+					<ul data-role="listview">
+					<ul>
             <hr>
-              <li><a href="#page-nova-info" data-transition="flip">Nova</a></li>
+					<li><a href="#page-nova-info" data-transition="flip">Nova</a></li>
             <hr>
-              <li><a href="#page-meringin-info" data-transition="flip">Taman Bukit Meringin</a></li>
+					<li><a href="#page-meringin-info" data-transition="flip">Taman Bukit Meringin</a></li>
             <hr>
-              <li><a href="#page-harmony-info" data-transition="flip">Harmony Park</a></li>
+					<li><a href="#page-harmony-info" data-transition="flip">Harmony Park</a></li>
             <hr>
-              <li><a href="#page-ara-info" data-transition="flip">Ara Aman</a></li>
+					<li><a href="#page-ara-info" data-transition="flip">Ara Aman</a></li>
             <hr>
-              <li><a href="#page-gurney-info" data-transition="flip">Gurney Residence</a></li>
+					<li><a href="#page-gurney-info" data-transition="flip">Gurney Residence</a></li>
             <hr>
-            </ul>
-          </ul>
-        </div>
+					</ul>
+					</ul>
+			</div>
         
 	    <div data-role="collapsible" data-collapsed="true">
-	      <h3>Commercial</h3>
-	      <ul data-role="listview">
-	        <ul>
+				<h3>Commercial</h3>
+					<ul data-role="listview">
+					<ul>
             <hr>
-	          <li><a href="#page-kbc-info" title="FREEHOLD" data-transition="flip">Kiara Business Centre</a></li>
+					<li><a href="#page-kbc-info" title="FREEHOLD" data-transition="flip">Kiara Business Centre</a></li>
 	        <hr>
-              <li><a href="#page-kiarap-info" title="FREEHOLD"data-transition="flip">Kiara Plaza</a></li>
+					<li><a href="#page-kiarap-info" title="FREEHOLD"data-transition="flip">Kiara Plaza</a></li>
 	        <hr>
-              <li><a href="#page-kipsend-info" data-transition="flip">KIP Sendayan</a></li>
+					<li><a href="#page-kipsend-info" data-transition="flip">KIP Sendayan</a></li>
 	        <hr>
-              <li><a href="#page-kipsent-info" data-transition="flip">KIP Sentral, KLIA</a></li>
+					<li><a href="#page-kipsent-info" data-transition="flip">KIP Sentral, KLIA</a></li>
 	        <hr>
-              <li><a href="#page-kipm-info" data-transition="flip">KIP Utama, Melaka</a></li>
+					<li><a href="#page-kipm-info" data-transition="flip">KIP Utama, Melaka</a></li>
             <hr>
-            </ul>
-          </ul>
+					</ul>
+					</ul>
         </div>
         
 	    <div data-role="collapsible" data-collapsed="true">
@@ -339,7 +332,7 @@ Powered by<a href="http://www.mlcalc.com/">Mortgage Calculator</a>
                 </div>	
 			</div>
             <hr>
-      </div>
+			</div>
       
         <div data-role="collapsible" data-collapsed="true">
 	       <h3>Alex Lee</h3>
